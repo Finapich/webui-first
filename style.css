@@ -1,0 +1,174 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Hanuman', sans-serif;
+    background-color: #fcfaf7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #631212; /* Traditional Khmer Red/Burgundy */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+header .logo {
+    color: #D4AF37; /* Luxury Gold color */
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #D4AF37;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #D4AF37;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    max-width: 600px;
+}
+
+.btn {
+    background-color: #D4AF37;
+    color: #631212;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background 0.3s, transform 0.2s;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Menu Section */
+.menu-section {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    color: #631212;
+    font-size: 2rem;
+}
+
+.underline {
+    width: 80px;
+    height: 3px;
+    background-color: #D4AF37;
+    margin: 10px auto 40px auto;
+}
+
+/* Menu Grid Layout */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 30px;
+}
+
+@media (max-width: 600px) {
+    .menu-grid {
+        grid-template-columns: 1fr; /* Switch to 1 column on mobile screens */
+    }
+}
+
+.menu-item {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 6px;
+    border-left: 5px solid #631212;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.03);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: transform 0.2s ease, border-left-color 0.2s;
+}
+
+.menu-item:hover {
+    transform: translateY(-3px);
+    border-left-color: #D4AF37;
+}
+
+.item-details h3 {
+    color: #333;
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+}
+
+.item-details p {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #631212;
+    margin-left: 15px;
+    white-space: nowrap;
+}
+
+/* Footer Section */
+footer {
+    background-color: #1a1a1a;
+    color: #ccc;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+.footer-content .copyright {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #777;
+}
