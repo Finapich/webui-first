@@ -19,8 +19,8 @@
             <a href="#home">Home</a>
             <a href="#menu">Menu</a>
             <a href="#about">About Us</a>
+            <a href="#booking">Booking Table</a>
             <a href="#contact">Contact</a>
-            <a href="#Booking Table ">Booking Table</a>
         </nav>
     </header>
 
@@ -33,13 +33,14 @@
     </section>
 
     <section id="menu" class="menu-section">
-        <h2 class="section-title"> Our Special Menu</h2>
+        <h2 class="section-title"> Our Menu</h2>
         <div class="underline"></div>
 
         <!-- House Specials Category -->
-        <h3 class="menu-category-title">House Specials (ម្ហូបប្រចាំហាង)</h3>
+        <h3 class="menu-category-title">Popular Menu </h3>
         <div class="menu-grid">
             <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1628428798957-74a025593b1a?q=80&w=400" alt="Fish Amok" class="menu-item-image">
                 <div class="item-details">
                     <h3>Fish Amok</h3>
                     <p>Traditional Khmer steamed fish curry in banana leaves with coconut milk and kroeung paste.</p>
@@ -48,6 +49,7 @@
             </div>
 
             <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1604893352839-3a3735a129a2?q=80&w=400" alt="Beef Lok Lak" class="menu-item-image">
                 <div class="item-details">
                     <h3>Beef Lok Lak</h3>
                     <p>Stir-fried marinated beef served with fresh lettuce, cucumbers, tomatoes, and lime-pepper dipping
@@ -57,6 +59,7 @@
             </div>
 
             <div class="menu-item">
+                <img src="https://plus.unsplash.com/premium_photo-1694699352229-a4133f208933?q=80&w=400" alt="Samlor Machu Kroeung" class="menu-item-image">
                 <div class="item-details">
                     <h3>Samlor Machu Kroeung</h3>
                     <p>Authentic sour soup with beef, water morning glory, and aromatic lemongrass paste.</p>
@@ -65,6 +68,7 @@
             </div>
 
             <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1599511432853-96b6553b432a?q=80&w=400" alt="Khmer Pork Fried Rice" class="menu-item-image">
                 <div class="item-details">
                     <h3>Khmer Pork Fried Rice</h3>
                     <p>Fragrant jasmine rice stir-fried with local herbs, vegetables, and tender pork marination.</p>
@@ -77,6 +81,7 @@
         <h3 class="menu-category-title">Desserts </h3>
         <div class="menu-grid">
             <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1583573636334-398510899692?q=80&w=400" alt="Pumpkin Custard" class="menu-item-image">
                 <div class="item-details">
                     <h3>Pumpkin Custard </h3>
                     <p>Sweet and creamy custard steamed inside a whole pumpkin, a classic Khmer dessert.</p>
@@ -85,6 +90,7 @@
             </div>
 
             <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1618885122028-f9b546b29b3e?q=80&w=400" alt="Layered Jelly Cake" class="menu-item-image">
                 <div class="item-details">
                     <h3>Layered Jelly Cake </h3>
                     <p>Colorful and chewy jelly cake made with coconut milk and pandan flavors.</p>
@@ -97,6 +103,7 @@
         <h3 class="menu-category-title">Drinks</h3>
         <div class="menu-grid">
             <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1579954115545-b1a4b6f5195b?q=80&w=400" alt="Iced Coffee" class="menu-item-image">
                 <div class="item-details">
                     <h3>Iced Coffee with Condensed Milk</h3>
                     <p>Strong, dark-roast coffee served over ice with sweet condensed milk.</p>
@@ -105,6 +112,7 @@
             </div>
 
             <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1525385133512-2f3bdd039054?q=80&w=400" alt="Fresh Coconut Juice" class="menu-item-image">
                 <div class="item-details">
                     <h3>Fresh Coconut Juice</h3>
                     <p>Refreshing juice straight from a young coconut, served chilled.</p>
@@ -114,10 +122,42 @@
         </div>
     </section>
 
+    <section id="booking" class="booking-section">
+        <h2 class="section-title">Book Your Table</h2>
+        <div class="underline"></div>
+        <form class="booking-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+            </div>
+            <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" name="guests" min="1" value="2" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group full-width">
+                <label for="requests">Special Requests</label>
+                <textarea id="requests" name="requests" rows="4" placeholder="e.g., Request for a quiet corner table"></textarea>
+            </div>
+            <button type="submit" class="btn">Book Now</button>
+        </form>
+    </section>
+
     <footer id="contact">
         <div class="footer-content">
-            <p>📍 ផ្លូវលេខ ១២៣, រាជធានីភ្នំពេញ (Street 123, Phnom Penh, Cambodia)</p>
-            <p>📞 012 345 678 / 098 765 432</p>
+            <p>📍 Street 123, Phnom Penh, Cambodia</p>
+            <p>� 012 345 678 / 098 765 432</p>
             <p class="copyright">&copy; 2026 Angkor Taste Restaurant. All Rights Reserved.</p>
         </div>
     </footer>
