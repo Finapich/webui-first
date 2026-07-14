@@ -43,6 +43,23 @@ header nav a:hover {
     color: #D4AF37;
 }
 
+/* Language Selector */
+.language-selector {
+    margin-left: 20px;
+}
+
+.language-selector a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.language-selector .lang-active {
+    color: #D4AF37; /* Gold to match hover and logo */
+    text-decoration: underline;
+}
+
 /* Hero Section */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
