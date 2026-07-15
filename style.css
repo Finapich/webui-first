@@ -14,7 +14,8 @@ body {
 
 /* Header & Navigation */
 header {
-    background-color: #631212; /* Traditional Khmer Red/Burgundy */
+    background-color: #631212;
+    /* Traditional Khmer Red/Burgundy */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,11 +23,12 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 header .logo {
-    color: #D4AF37; /* Luxury Gold color */
+    color: #D4AF37;
+    /* Luxury Gold color */
     font-size: 1.6rem;
     font-weight: bold;
 }
@@ -56,14 +58,15 @@ header nav a:hover {
 }
 
 .language-selector .lang-active {
-    color: #D4AF37; /* Gold to match hover and logo */
+    color: #D4AF37;
+    /* Gold to match hover and logo */
     text-decoration: underline;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                url('https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200') no-repeat center center/cover;
     height: 60vh;
     display: flex;
     justify-content: center;
@@ -77,7 +80,7 @@ header nav a:hover {
     font-size: 3rem;
     color: #D4AF37;
     margin-bottom: 15px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero p {
@@ -131,14 +134,15 @@ header nav a:hover {
 
 @media (max-width: 600px) {
     .menu-grid {
-        grid-template-columns: 1fr; /* Switch to 1 column on mobile screens */
+        grid-template-columns: 1fr;
+        /* Switch to 1 column on mobile screens */
     }
 }
 
 .menu-item {
     background: #fff;
     border-radius: 6px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     display: flex;
     align-items: center;
     gap: 20px;
@@ -148,7 +152,7 @@ header nav a:hover {
 
 .menu-item:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
 .menu-item-image {
@@ -156,7 +160,8 @@ header nav a:hover {
     height: 90px;
     object-fit: cover;
     border-radius: 8px;
-    flex-shrink: 0; /* Prevents image from shrinking */
+    flex-shrink: 0;
+    /* Prevents image from shrinking */
 }
 
 .item-details h3 {
@@ -204,7 +209,7 @@ header nav a:hover {
     padding: 40px;
     background: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
 .booking-form {
