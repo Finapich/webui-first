@@ -107,7 +107,7 @@ header nav a:hover {
 
 /* Menu Section */
 .menu-section {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 60px auto;
     padding: 0 20px;
 }
@@ -116,6 +116,8 @@ header nav a:hover {
     text-align: center;
     color: #631212;
     font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
 .underline {
@@ -125,62 +127,83 @@ header nav a:hover {
     margin: 10px auto 40px auto;
 }
 
+.menu-category-title {
+    font-size: 1.35rem;
+    color: #631212;
+    margin: 35px 0 18px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #f3d47c;
+    display: inline-block;
+}
+
 /* Menu Grid Layout */
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 30px;
+    align-items: stretch;
+}
+
+@media (max-width: 900px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 @media (max-width: 600px) {
     .menu-grid {
         grid-template-columns: 1fr;
-        /* Switch to 1 column on mobile screens */
     }
 }
 
 .menu-item {
     background: #fff;
-    border-radius: 6px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f4e8d0;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
     display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
+    flex-direction: column;
+    overflow: hidden;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .menu-item:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
 }
 
 .menu-item-image {
-    width: 90px;
-    height: 90px;
+    width: 100%;
+    height: 190px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 0;
     flex-shrink: 0;
-    /* Prevents image from shrinking */
 }
 
-.item-details h3 {
-    color: #333;
-    font-size: 1.25rem;
+.item-details {
+    padding: 16px 18px 18px;
+}
+
+.item-details h4 {
+    color: #631212;
+    font-size: 1.15rem;
     margin-bottom: 8px;
 }
 
 .item-details p {
     font-size: 0.95rem;
     color: #666;
+    margin-bottom: 10px;
 }
 
 .price {
+    display: inline-block;
     font-weight: bold;
-    font-size: 1.2rem;
-    color: #631212;
-    margin-left: 15px;
-    white-space: nowrap;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #D4AF37;
+    padding: 6px 12px;
+    border-radius: 999px;
 }
 
 /* About Us Section */
