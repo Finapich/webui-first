@@ -180,34 +180,21 @@ header nav a:hover {
 
 /* About Us Section */
 .about-section {
-    max-width: 1100px;
+    background-color: #ffffff;
+    padding: 60px 20px;
+    margin-top: 60px;
+}
+
+.about-content {
+    max-width: 800px;
     margin: 60px auto;
-    padding: 0 20px;
+    text-align: center;
 }
 
-.about-container {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.about-image {
-    flex: 1;
-}
-
-.about-image img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-}
-
-.about-text {
-    flex: 1.2;
-}
-
-.about-text h3 {
-    color: #631212;
-    margin-bottom: 15px;
+.about-content p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
 }
 
 /* Booking Section */
