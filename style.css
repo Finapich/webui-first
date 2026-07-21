@@ -136,74 +136,96 @@ header nav a:hover {
     display: inline-block;
 }
 
-/* Menu Grid Layout */
-.menu-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 30px;
-    align-items: stretch;
+.menu-intro {
+    max-width: 720px;
+    margin: 0 auto 30px auto;
+    color: #555;
+    text-align: center;
+    font-size: 1rem;
 }
 
-@media (max-width: 900px) {
-    .menu-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 600px) {
-    .menu-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-.menu-item {
-    background: #fff;
-    border: 1px solid #f4e8d0;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+.menu-tabs {
     display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 40px;
 }
 
-.menu-item:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
-}
-
-.menu-item-image {
-    width: 100%;
-    height: 190px;
-    object-fit: cover;
-    border-radius: 0;
-    flex-shrink: 0;
-}
-
-.item-details {
-    padding: 16px 18px 18px;
-}
-
-.item-details h4 {
+.menu-tab {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    border: 1px solid rgba(99, 18, 18, 0.25);
+    border-radius: 999px;
     color: #631212;
-    font-size: 1.15rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.menu-tab:hover,
+.menu-tab:focus {
+    background-color: rgba(212, 175, 55, 0.15);
+    color: #631212;
+}
+
+.menu-group {
+    margin-bottom: 40px;
+}
+
+.menu-list {
+    border-top: 1px solid #ebe3d6;
+}
+
+.menu-entry {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+    padding: 20px 0;
+    align-items: flex-start;
+    border-bottom: 1px solid #ebe3d6;
+}
+
+.menu-entry:last-child {
+    border-bottom: none;
+}
+
+.menu-entry h4 {
+    color: #631212;
+    font-size: 1.1rem;
     margin-bottom: 8px;
 }
 
-.item-details p {
+.menu-entry p {
+    color: #555;
+    line-height: 1.6;
     font-size: 0.95rem;
-    color: #666;
-    margin-bottom: 10px;
 }
 
 .price {
-    display: inline-block;
-    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
     font-size: 1rem;
     color: #fff;
     background-color: #D4AF37;
-    padding: 6px 12px;
+    padding: 10px 14px;
     border-radius: 999px;
+    white-space: nowrap;
+}
+
+@media (max-width: 800px) {
+    .menu-entry {
+        grid-template-columns: 1fr;
+    }
+
+    .price {
+        justify-self: start;
+        margin-top: 10px;
+    }
 }
 
 /* About Us Section */
