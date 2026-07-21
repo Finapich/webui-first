@@ -181,10 +181,10 @@ header nav a:hover {
 
 .menu-entry {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 120px 1fr auto;
     gap: 20px;
     padding: 20px 0;
-    align-items: flex-start;
+    align-items: center;
     border-bottom: 1px solid #ebe3d6;
 }
 
@@ -192,13 +192,26 @@ header nav a:hover {
     border-bottom: none;
 }
 
-.menu-entry h4 {
+.menu-entry-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.menu-entry-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-entry-content h4 {
     color: #631212;
     font-size: 1.1rem;
     margin-bottom: 8px;
 }
 
-.menu-entry p {
+.menu-entry-content p {
     color: #555;
     line-height: 1.6;
     font-size: 0.95rem;
